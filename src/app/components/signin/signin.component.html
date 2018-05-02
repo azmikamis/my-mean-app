@@ -1,3 +1,14 @@
-<p>
-  signin works!
-</p>
+<h1>Sign in</h1>
+<p>Not a member? Please <a routerLink="/register">register</a>.</p>
+
+<form>
+  <div>
+    <label for="email">Email address</label>
+    <input type="email" name="email" placeholder="Enter email" [(ngModel)]="credentials.email">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" name="password" placeholder="Enter password" [(ngModel)]="credentials.password">
+  </div>
+  <button type="submit">Sign in</button>
+</form>
